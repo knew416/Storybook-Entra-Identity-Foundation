@@ -52,3 +52,30 @@ It also strengthened governance skills in documenting permissions, collecting ev
 Scope
 
 This was a practice tenant with fictional employees. I tested directory membership and administrative permissions. Application access and AI specific controls were outside this lab.
+
+## Lab Evidence
+
+### Finance membership rule
+The group uses the Department attribute to identify Finance employees.
+
+![Finance dynamic membership rule](05_finance_dynamic_rule.png)
+
+### Automatic membership addition
+Peter joined the dynamic Finance group after his department changed to Finance.
+
+![Peter added to Finance](07_peter_finance_membership.png)
+
+### Automatic membership removal
+Peter left the dynamic Finance group after his department returned to Creative.
+
+![Peter removed from Finance](08_peter_removed_from_finance.png)
+
+### Permitted administrative action
+Shuri successfully reset Tiana’s password within the Finance Administrative Unit.
+
+![Tiana password reset succeeded](11_shuri_tiana_reset_success.png)
+
+### Blocked administrative action
+Shuri was prevented from resetting Peter’s password outside the Finance Administrative Unit.
+
+![Peter password reset blocked](12_shuri_peter_reset_blocked.png)
